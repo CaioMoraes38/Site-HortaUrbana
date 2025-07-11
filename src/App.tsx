@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import Chart from 'chart.js/auto'; 
+import Chart from 'chart.js/auto';
 import type { Chart as ChartJS, ChartOptions, ChartData } from 'chart.js';
 
 const App = () => {
@@ -304,10 +304,10 @@ const App = () => {
                     <div className="container mx-auto px-6">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold text-[#4a7c59]">A Solução: Um Ecossistema Inteligente</h2>
-                            <p className="mt-4 text-lg max-w-3xl mx-auto">Propomos um sistema de irrigação automatizado, sustentável e acessível, que integra três componentes chave para otimizar o trabalho, economizar recursos e empoderar os produtores.</p>
+                            <p className="mt-4 text-lg max-w-3xl mx-auto">Propomos um sistema de irrigação automatizado, sustentável e acessível, que integra componentes de hardware e software para otimizar o trabalho, economizar recursos e empoderar os produtores.</p>
                         </div>
 
-                        <div className="grid md:grid-cols-3 gap-8">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                             <div className="group card p-6 text-center">
                                 <div className="tech-component p-6 rounded-lg">
                                      <div className="tech-icon text-5xl mb-4 transition-colors">☀️</div>
@@ -318,15 +318,22 @@ const App = () => {
                             <div className="group card p-6 text-center">
                                  <div className="tech-component p-6 rounded-lg">
                                      <div className="tech-icon text-5xl mb-4 transition-colors">🌡️</div>
-                                    <h3 className="text-xl font-bold mb-2">Sensores de Precisão</h3>
-                                     <p className="tech-detail">Sensores de umidade do solo e de condições ambientais coletam dados em tempo real, garantindo que a irrigação ocorra apenas quando e na quantidade necessária.</p>
+                                    <h3 className="text-xl font-bold mb-2">Sensores e ESP32</h3>
+                                     <p className="tech-detail">Microcontroladores ESP32 com sensores de umidade do solo e condições ambientais capturam dados precisos para decisões de irrigação.</p>
                                 </div>
                             </div>
                              <div className="group card p-6 text-center">
                                 <div className="tech-component p-6 rounded-lg">
                                     <div className="tech-icon text-5xl mb-4 transition-colors">📱</div>
-                                    <h3 className="text-xl font-bold mb-2">Controle via Aplicativo</h3>
-                                    <p className="tech-detail">Um aplicativo de celular intuitivo permite o controle remoto do sistema pelos usuários, oferecendo flexibilidade e controle total na palma da mão.</p>
+                                    <h3 className="text-xl font-bold mb-2">App Mobile (React Native)</h3>
+                                    <p className="tech-detail">Um aplicativo móvel em React Native permitirá o monitoramento e controle remoto do sistema pelos usuários, oferecendo flexibilidade total.</p>
+                                </div>
+                            </div>
+                            <div className="group card p-6 text-center">
+                                <div className="tech-component p-6 rounded-lg">
+                                    <div className="tech-icon text-5xl mb-4 transition-colors">🗄️</div>
+                                    <h3 className="text-xl font-bold mb-2">Banco de Dados (Firebase/Supabase)</h3>
+                                    <p className="tech-detail">Os dados capturados serão armazenados em um backend robusto como Firebase ou Supabase, garantindo segurança e acesso em tempo real.</p>
                                 </div>
                             </div>
                         </div>
