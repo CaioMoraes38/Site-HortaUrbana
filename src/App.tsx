@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Chart from 'chart.js/auto'; 
-import type { Chart as ChartJS, ChartOptions, ChartData, registerables } from 'chart.js';
+import type { Chart as ChartJS, ChartOptions, ChartData } from 'chart.js';
 
 const App = () => {
     const [menuMobileAberto, setMenuMobileAberto] = useState<boolean>(false);
