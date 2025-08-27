@@ -104,7 +104,7 @@ const App = () => {
           labels: ['Uso de Água', 'Produtividade'],
           datasets: [{
             label: 'Mudança Percentual',
-            data: [-30, 10],
+            data: [-30,50],
             backgroundColor: (context) => {
               const valor = context.raw as number;
               return valor < 0 ? 'rgba(74, 124, 89, 0.8)' : 'rgba(127, 179, 107, 0.8)';
@@ -248,7 +248,7 @@ const App = () => {
                 <p className="mt-2 text-xl">Hortas Comunitárias</p>
               </div>
               <div className="card p-8">
-                <span className="text-5xl font-bold text-[#4a7c59]" data-counter="2200">0</span>
+                <span className="text-5xl font-bold text-[#4a7c59]" data-counter="2000">500</span>
                 <p className="mt-2 text-xl">Famílias Beneficiadas</p>
               </div>
               <div className="card p-8">
@@ -381,12 +381,12 @@ const App = () => {
               </div>
             </div>
 
-            <div className="mt-12 grid md:grid-cols-2 gap-6">
-              <div className="flex flex-col items-center">
+            <div className="justify-items-center-safe mt-8">
+              <div className="item-center">
                 <img
                   src="https://s1.static.brasilescola.uol.com.br/be/2021/05/ciclo-da-agua.jpg"
                   alt="Ilustração de Evaporação"
-                  className="rounded-lg shadow-md w-full max-w-sm"
+                  className="rounded-lg shadow-md w-full min-w-lg max-w-sm"
                 />
                 <p className="mt-2 text-sm text-gray-600"></p>
               </div>
@@ -445,10 +445,27 @@ const App = () => {
         </section>
       </main>
 
-      <footer className="bg-[#f0ebe5] py-8">
+       <footer className="bg-[#f0ebe5] py-8">
         <div className="container mx-auto px-6 text-center text-gray-600">
           <p>&copy; 2025 Projeto de Irrigação Inteligente - Uma colaboração para o futuro de Birigui.</p>
           <p className="text-sm mt-2">Desenvolvido como uma iniciativa do IFSP - Campus Birigui.</p>
+          <div className="flex justify-center items-center space-x-4 mt-4">
+            {/* Ícone e link do Instagram */}
+            <a href="https://www.instagram.com/ifspbirigui" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram transition duration-300 transform hover:scale-110">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            {/* Ícone e link do YouTube */}
+            <a href="https://www.youtube.com/channel/UCy79j-3UoJ4EwYJ3I3p9k9A" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-youtube transition duration-300 transform hover:scale-110">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2A54.47 54.47 0 0 0 12 3c-4.99 0-9.66.42-10.6 1.42A2.78 2.78 0 0 0 1.46 6.42C1 8.52 1 12 1 12s0 3.48.46 5.58a2.78 2.78 0 0 0 1.94 2A54.47 54.47 0 0 0 12 21c4.99 0 9.66-.42 10.6-1.42a2.78 2.78 0 0 0 1.94-2C23 15.48 23 12 23 12s0-3.48-.46-5.58z"></path>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
