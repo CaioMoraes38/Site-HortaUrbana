@@ -450,15 +450,13 @@ const App = () => {
           <p>&copy; 2025 Projeto de Irrigação Inteligente - Uma colaboração para o futuro de Birigui.</p>
           <p className="text-sm mt-2">Desenvolvido como uma iniciativa do IFSP - Campus Birigui.</p>
           <div className="flex justify-center items-center space-x-4 mt-4">
-            {/* Ícone e link do Instagram */}
             <a href="https://www.instagram.com/ifspbirigui" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-instagram transition duration-300 transform hover:scale-110">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
-            </a>
-            {/* Ícone e link do YouTube */}
+            </a>1
             <a href="https://youtu.be/vS4BeqfudMc?si=xs8esJP35BTATa90" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-youtube transition duration-300 transform hover:scale-110">
                 <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2A54.47 54.47 0 0 0 12 3c-4.99 0-9.66.42-10.6 1.42A2.78 2.78 0 0 0 1.46 6.42C1 8.52 1 12 1 12s0 3.48.46 5.58a2.78 2.78 0 0 0 1.94 2A54.47 54.47 0 0 0 12 21c4.99 0 9.66-.42 10.6-1.42a2.78 2.78 0 0 0 1.94-2C23 15.48 23 12 23 12s0-3.48-.46-5.58z"></path>
